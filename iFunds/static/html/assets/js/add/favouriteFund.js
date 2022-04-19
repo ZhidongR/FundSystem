@@ -19,7 +19,7 @@ function show_user_info() {
 //进行基金的Table画图
 function init_fund_table() {
     url = "api/1.0/funds";
-
+    // $('#fund-table').bootstrapTable("destroy");
     var tableColums = [
         { field: "fund_name", title: "基金名", sortable: true },
         { field: "fund_code", title: "基金代号", sortable: true },
@@ -58,11 +58,13 @@ function init_fund_table() {
             contentType: 'application/json',
             url: 'api/1.0/funds', //请求地址 
             queryParams: function () {
-                var user_favourite_fund_set = get_favourite_fund();
+                var user_favourite_fund_arr = get_favourite_fund();
+                
                 var fund_code_ls = [];
-                $.each(user_favourite_fund_set, function (key, value) {
-                    fund_code_ls.push(key);
+                $.each(user_favourite_fund_arr, function (index, value) {
+                    fund_code_ls.push(value.fund_code);
                 });
+                console.log(fund_code_ls);
                 var params = {
                     "fund_code_ls": fund_code_ls
                 };
@@ -91,6 +93,8 @@ function init_fund_table() {
             fixedNumber: 1
         }
     );
+
+    $('#fund-table').bootstrapTable("refresh");
 }
 
 function init_search_table(fund_code_ls) {
@@ -117,9 +121,8 @@ function init_search_table(fund_code_ls) {
                     var arr1 = [];
                     arr1.push(row.fund_code);
                     if (add_favourite_fund(arr1)) {
-                        //按钮变
-                        $("#add-favourite").text("已添加喜爱");
-                        $("#fund-table").bootstrapTable("append", row);
+                        // $("#fund-table").bootstrapTable("append", row);
+                        init_fund_table();
                     };
                 }
             },

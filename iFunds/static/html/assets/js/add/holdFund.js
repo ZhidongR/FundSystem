@@ -163,6 +163,7 @@ function init_search_table() {
                         if (trace_to_server(paras_set)) {
                             $("#TipsText").text("已申请买入");
                             $('#showTipsModal').modal('show');
+                            init_record_table();
                             // return false;
                         }
                         else {
@@ -171,7 +172,6 @@ function init_search_table() {
                             // alert("申请卖出失败，请检查参数");
                             // return false;
                         }
-                        return false; //防止重复执行
                     });
 
                     $("#BuyModal").on("loaded.bs.modal", function () {
@@ -226,8 +226,8 @@ function init_search_table() {
 
 function init_record_table() {
 
-    // $('#record-table').bootstrapTable("destroy");
-
+    $('#record-table').bootstrapTable("destroy");
+    // $('#record-table').bootstrapTable("refresh");
     var tableColums = [
         { field: "id", title: "记录号", sortable: true },
         { field: "fund_name", title: "基金名", sortable: true },
@@ -261,6 +261,8 @@ function init_record_table() {
             searchOnEnterKey: true,
         }
     );
+
+    
 }
 
 

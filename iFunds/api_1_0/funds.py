@@ -126,25 +126,42 @@ def set_favourite_funds():
         return jsonify(code=RET.PARAMERR, msg="参数不对，请检查")
 
     # 2.校验参数，并进行数据写入
+    success_ls = []
+    fail_ls = []
+    exist_ls =[]
+    not_fund_ls = []
+    re_data = {}
     for fund_code in favourite_fund_ls:
         fund = Fund.query.filter_by(fund_code=fund_code).first()
         if fund:
             fund_id = fund.id
             check_exist = UserFundForce.query.filter_by(user_id=user_id, fund_id=fund_id).first()
             if check_exist:
+                exist_ls.append(fund_code)
                 continue
-            user_fund_force = UserFundForce(user_id=user_id, fund_id=fund_id)
+            user_fund_force = UserFundForce(user_id=user_id, fund_id=fund_id,fund_code=fund_code,fund_name=fund.fund_name)
             try:
                 db.session.add(user_fund_force)
                 db.session.commit()
+                success_ls.append(fund_code)
             except Exception as e:
                 db.session.rollback()
                 current_app.logger.error("将基金%s添加到数据库user_fund_force出现异常" % fund_code)
+                fail_ls.append(fail_ls)
                 return jsonify(code=RET.DBERR, msg="操作数据出现异常")
         else:
+            not_fund_ls.append(fund_code)
             current_app.logger.info("添加喜爱基金，数据库不存在fund_code=%s的基金" % fund_code)
-    return jsonify(code=RET.OK, msg="success")
 
+    success_ls = []
+    fail_ls = []
+    exist_ls = []
+    not_fund_ls = []
+    re_data["success"] = success_ls
+    re_data["fail"] = fail_ls
+    re_data["exist"] = exist_ls
+    re_data["not_fund"] = not_fund_ls
+    return jsonify(code=RET.OK, msg="success", data=re_data)
 
 @api.route("/funds/favourite", methods=["DELETE"])
 @login_required
