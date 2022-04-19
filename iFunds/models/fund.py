@@ -89,24 +89,24 @@ class Fund(BaseModel, db.Model):
 
         self.fund_code = dict_data.get("fund_code")
         self.fund_name = dict_data.get("fund_name")
-        if dict_data.get("current_price") != "":
+        if dict_data.get("current_price") and dict_data.get("current_price") != "":
             self.current_price = float(dict_data.get("current_price"))
-        if dict_data.get("price_time") != "":
+        if dict_data.get("price_time") and dict_data.get("price_time") != "":
             self.price_time = dict_data.get("price_time")
-        if dict_data.get("source_rate") != "":
+        if dict_data.get("source_rate") and dict_data.get("source_rate") != "":
             self.source_rate = float(dict_data.get("source_rate"))
-        if dict_data.get("rate") != "":
+        if dict_data.get("rate") and dict_data.get("rate") != "":
             self.rate = float(dict_data.get("rate"))
-        if dict_data.get("min_pn") != "":
+        if dict_data.get("min_pn") and dict_data.get("min_pn") != "":
             self.min_pn = float(dict_data.get("min_pn"))
         self.stock_codes = dict_data.get("stock_codes")
-        if dict_data.get("syl_1y"):
+        if dict_data.get("syl_1y") and dict_data.get("syl_1y") != "":
             self.syl_1y = float(dict_data.get("syl_1y"))
-        if dict_data.get("syl_6m"):
+        if dict_data.get("syl_6m") and dict_data.get("syl_6m") != "":
             self.syl_6m = float(dict_data.get("syl_6m"))
-        if dict_data.get("syl_3m"):
+        if dict_data.get("syl_3m") and dict_data.get("syl_3m") != "":
             self.syl_3m = float(dict_data.get("syl_3m"))
-        if dict_data.get("syl_1m"):
+        if dict_data.get("syl_1m") and dict_data.get("syl_1m") != "":
             self.syl_1m = float(dict_data.get("syl_1m"))
         self.shares_positions = dict_data.get("shares_positions")
         self.net_worth_trend = dict_data.get("net_worth_trend")
@@ -120,5 +120,4 @@ class Fund(BaseModel, db.Model):
         self.performance_evaluation = dict_data.get("performance_evaluation")
         self.buy_sedemption = dict_data.get("buy_sedemption")
         self.swithSameType = dict_data.get("swithSameType")
-        self.update_time = datetime.now()
         return True
