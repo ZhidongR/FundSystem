@@ -37,6 +37,7 @@ def login():
 
     # 3. 校验参数
     try:
+        db.session.commit()
         user = User.query.filter(User.phone == phone).first()
     except Exception as e:
         current_app.logger.error(e)

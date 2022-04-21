@@ -38,7 +38,6 @@ def login():
         current_app.logger.error("%s: not user:%s" % (__name__, phone))
     if not (user and user.check_password(password)):
         current_app.logger.error("error msg")
-        print(222)
         return jsonify(code=RET.PARAMERR, msg='存在账号或密码错误')
 
     # 4. 数据库，redis，session处理
@@ -49,7 +48,6 @@ def login():
     except Exception as e:
         current_app.logger.error("%s:%s" % (__name__, e) )
     # 5. 返回结果
-    current_app.logger.info(333)
     return jsonify(code=RET.OK, msg='登录成功')
 
 

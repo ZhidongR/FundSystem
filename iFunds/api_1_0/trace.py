@@ -40,6 +40,7 @@ def post_fund_trace():
     user_id = g.user_id
     re_data = {}  # 返回的数据字典
     # 检查数据库中是否存在该基金
+    db.session.commit()
     fund = Fund.query.filter_by(fund_code=fund_code).first()
     fund_id, fund_code, fund_name = fund.id, fund.fund_code, fund.fund_name
 
@@ -84,6 +85,7 @@ def post_fund_trace():
         if not all([fund_code, sale_flag, sale_num]):
             return jsonify(code=RET.PARAMERR, msg=error_map.get(RET.PARAMERR))
         # 数据库事务操作
+        db.session.commit()
         try:
             hold_fund = UserFundHold.query.filter(UserFundHold.hold_num > 0,
                                                   UserFundHold.user_id == user_id,
@@ -134,6 +136,7 @@ def get_fund_trace():
     days = request.args.get("days", 7)
     user_id = g.user_id
     re_data = []  # 返回的列表，元素为字典
+    db.session.commit()
     ls_trace_record = TraceRecord.query.filter((TraceRecord.user_id == user_id)).all()
     if not ls_trace_record:
         return jsonify(code=RET.NODATA, msg="数据库不存在满足的数据")

@@ -39,8 +39,10 @@ def register():
 
     # 3. 校验数据
     try:
+        db.session.commit()
         user = User.query.filter_by(phone=phone).first()
     except Exception as e:
+        db.session.rollback()
         current_app.logger.error(e)
         return jsonify(code=RET.DBERR, msg=error_map.get(RET.DBERR))
     if user:
@@ -66,7 +68,6 @@ def register():
     try:
         db.session.add(user)
         db.session.commit()
-        user1 = User.query.filter_by(phone=phone).first()
     except Exception as e:
         db.session.rollback()
         current_app.logger.error(e)

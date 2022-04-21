@@ -43,18 +43,22 @@ def get_funds_info():
     if fund_code_ls:
         for fund_code in fund_code_ls:
             try:
+                db.session.commit()
                 fund = Fund.query.filter_by(fund_code=fund_code).first()
                 if not fund:
                     not_data_ls.append(fund_code)
                     continue
                 re_data_ls.append(fund.to_dict())
             except Exception as e:
+                db.session.rollback()
                 error_ls.append(fund_code)
                 current_app.logger.error("%s:读取fund_code[%s]出现异常:%s" % (__name__, fund_code, e))
+
 
     if fund_name_ls:
         for fund_name in fund_name_ls:
             try:
+                db.session.commit()
                 fund = Fund.query.filter_by(fund_name=fund_name).first()
                 if not fund:
                     if not fund:
@@ -62,6 +66,7 @@ def get_funds_info():
                         continue
                 re_data_ls.append(fund.to_dict())
             except Exception as e:
+                db.session.rollback()
                 error_ls.append(fund_name)
                 current_app.logger.error("%s:读取fund_name[%s]出现异常%s" % (__name__, fund_name, e))
     # 5.返回结果
@@ -101,6 +106,7 @@ def get_favourite_funds_info():
     """
     user_id = g.user_id
     try:
+        db.session.commit()
         user_fund_force_ls = UserFundForce.query.filter_by(user_id=user_id).all()
         if user_fund_force_ls:
             dict_ls = []
@@ -112,6 +118,7 @@ def get_favourite_funds_info():
         else:
             return jsonify(code=RET.OK, msg="用户没有关注/喜爱的基金")
     except Exception as e:
+        db.session.rollback()
         current_app.logger.error("%s:出现异常%s" % (__name__, e))
         return jsonify(code=RET.DBERR, msg="读取数据出现异常")
 
@@ -137,6 +144,7 @@ def set_favourite_funds():
     not_fund_ls = []
     re_data = {}
     for fund_code in favourite_fund_ls:
+        db.session.commit()
         fund = Fund.query.filter_by(fund_code=fund_code).first()
         if fund:
             fund_id = fund.id
@@ -184,6 +192,7 @@ def remove_favourite_funds():
 
     # 2.校验参数，并进行数据操作
     for fund_code in favourite_fund_ls:
+        db.session.commit()
         fund = Fund.query.filter_by(fund_code=fund_code).first()
         if fund:
             fund_id = fund.id
@@ -211,6 +220,7 @@ def get_hold_funds():
     """
     user_id = g.user_id
     try:
+        db.session.commit()
         hold_fund_ls = UserFundHold.query.filter(UserFundHold.user_id == user_id,
                                                  UserFundHold.hold_num > 0).all()
         if hold_fund_ls:
@@ -221,6 +231,7 @@ def get_hold_funds():
         else:
             return jsonify(code=RET.OK, msg="用户没有持有的基金",data=[])
     except Exception as e:
+        db.session.rollback()
         current_app.logger.error("%s:出现异常%s" % (__name__, e))
         return jsonify(code=RET.DBERR, msg="读取数据出现异常")
 

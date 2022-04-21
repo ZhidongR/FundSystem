@@ -29,6 +29,7 @@ def update_fund_data(fund_data_ls):
     for fs_code in fund_data_ls:
         # df = self.get_detail_data(fs_code=fs_code)  # 返回数据为pd.DataFrame()类型
         # 更改方案成：有则更新，无则插入操作
+        db.session.commit()
         try:
             dict_data = fund_data_cls.get_detail_data(fund_code=fs_code)  # 已修改为dict
             if not dict_data:
@@ -46,6 +47,7 @@ def update_fund_data(fund_data_ls):
                 current_app.logger.debug("%s:update fund data bt adding %s" % (__name__, fs_code))
             del fund
         except Exception as e:
+            db.session.rollback()
             current_app.logger.error("%s: %s" % (__name__, e))
             current_app.logger.error("%s: %s" % (__name__, "发生异常的Fund_code为%s" % fs_code))
     return True
@@ -66,7 +68,7 @@ def update_all_fund_data():
         # 将数据写入数据库中， 存在弊端，不能实现有则更新，无则插入操作
         # pd.io.sql.to_sql(frame=df, name='fund', con=your_connect, schema='fund_system', if_exists='append', index=False) #chunksize=10000
         # 更改方案成：有则更新，无则插入操作
-        current_app.logger.info(fs_code)
+        db.session.commit()
         try:
             if not dict_data:
                 continue
@@ -119,6 +121,7 @@ def deal_sale_record():
     4. 根据user_id将卖出的金额累加到用户的余额balance中。
     5. 修改trace_record的status=1，更新trace_price，price_time，trace_num，,trace_total,trace_time
     """
+    db.session.commit()
     record_ls = TraceRecord.query.filter(TraceRecord.status == 0, TraceRecord.buy_or_sale == "sale").all()
     if not record_ls:
         current_app.logger.info("数据库user_fund_trace中已经无需要处理的出售数据")
@@ -172,6 +175,7 @@ def deal_buy_record():
     3. 修改trace_record的status=1，更新trace_price，price_time，trace_num，trace_time
     4. 往user_hold_fund表中添加或跟新持有基金的表：user_id,fund_id,fund_code,fund_name,hold_num,收益，成本，持有金额等，deal_flag置0
     """
+    db.session.commit()
     record_ls = TraceRecord.query.filter(TraceRecord.status == 0, TraceRecord.buy_or_sale == "buy").all()
     if not record_ls:
         current_app.logger.info("数据库user_fund_trace中已经无需要处理的购买数据")
@@ -235,6 +239,7 @@ def deal_buy_record():
 
 @celery.task()
 def update_hold_fund_info():
+    db.session.commit()
     hold_fund_ls = UserFundHold.query.filter(UserFundHold.hold_num > 0).all()
     for hold_fund in hold_fund_ls:
         try:
@@ -266,6 +271,7 @@ def update_user_fund_info():
         return False
     for user in user_ls:
         user_id = user.id
+        db.session.commit()
         try:
             hold_fund_ls = UserFundHold.query.filter(UserFundHold.user_id == user_id).all()
             if not hold_fund_ls:
@@ -288,7 +294,9 @@ def update_user_fund_info():
         except Exception as e:
             db.session.rollback()
             current_app.logger.error("%s: %s" % (__name__, e))
+
     for hold_fund in hold_fund_ls:
+        db.session.commit()
         try:
             fund_id = hold_fund.fund_id
             fund = Fund.query.filter(Fund.id == fund_id).first()
