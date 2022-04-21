@@ -18,8 +18,7 @@ function show_user_info() {
 
 //进行基金的Table画图
 function init_fund_table() {
-    url = "api/1.0/funds";
-    // $('#fund-table').bootstrapTable("destroy");
+    $('#fund-table').bootstrapTable("destroy");
     var tableColums = [
         { field: "fund_name", title: "基金名", sortable: true },
         { field: "fund_code", title: "基金代号", sortable: true },
@@ -64,14 +63,13 @@ function init_fund_table() {
                 $.each(user_favourite_fund_arr, function (index, value) {
                     fund_code_ls.push(value.fund_code);
                 });
-                console.log(fund_code_ls);
                 var params = {
                     "fund_code_ls": fund_code_ls
                 };
                 return params;
             },
             dataType: 'json', //服务端返回的数据类型
-            // headers: { 'X-CSRFToken': getCookie('csrf_token') },
+            ajaxOptions:{headers: {'X-CSRFToken': getCookie('csrf_token')}},
             responseHandler: function (res) {
                 if (res.code == '0') {
                     // 返回成功并正常
@@ -93,16 +91,11 @@ function init_fund_table() {
             fixedNumber: 1
         }
     );
-
-    $('#fund-table').bootstrapTable("refresh");
 }
 
 function init_search_table(fund_code_ls) {
    
-
     $('#search-table').bootstrapTable("destroy");
-    var search_fund_ls = $("#search-fund-text").val().split(",");
-    var fund_ls_info = get_fund_info(search_fund_ls);
     var tableColums = [
         { field: "fund_name", title: "基金名", sortable: true },
         { field: "fund_code", title: "基金代号", sortable: true },
@@ -136,7 +129,7 @@ function init_search_table(fund_code_ls) {
     ];
 
     var params = {
-        "fund_code_ls": search_fund_ls
+        "fund_code_ls": fund_code_ls
     };
     $('#search-table').bootstrapTable(
         {
@@ -144,6 +137,7 @@ function init_search_table(fund_code_ls) {
             contentType: 'application/json',
             url: 'api/1.0/funds', //请求地址 
             queryParams: params,
+            ajaxOptions:{headers: {'X-CSRFToken': getCookie('csrf_token')}},
             dataType: 'json', //服务端返回的数据类型
             responseHandler: function (res) {
                 if (res.code == '0') {

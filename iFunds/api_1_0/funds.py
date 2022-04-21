@@ -70,6 +70,10 @@ def get_funds_info():
 
 @api.route("/funds/shishi", methods=["POST"])
 def get_fund_guzhi():
+    """
+    获取估值，输入参数Demo为{“fund_code_ls”：["000001,"000002"]}
+    :return: [{},{}]类型的数据列表
+    """
     # 1.获取参数
     json_data = json.loads(request.data)
     fund_code_ls = json_data.get("fund_code_ls")
@@ -87,12 +91,13 @@ def get_fund_guzhi():
             re_ls.append(re_ls)
     return jsonify(code=RET.OK, msg="OK", data=re_ls)
 
+
 @api.route("/funds/favourite", methods=["GET"])
 @login_required
 def get_favourite_funds_info():
     """
     用与获取用户已关注，喜爱的基金信息
-    :return:
+    :return: [{}，{}]类型数据列表，每个字典为一个基金信息
     """
     user_id = g.user_id
     try:

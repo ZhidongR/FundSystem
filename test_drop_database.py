@@ -13,7 +13,7 @@ from flask_migrate import Migrate
 class DatabaseTestCase(unittest.TestCase):
 
     def setUp(self):
-        app = create_app("develop")
+        app = create_app("product")
         Migrate(app, db)
         self.app = app
 

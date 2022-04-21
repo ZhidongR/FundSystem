@@ -18,7 +18,6 @@ function show_user_info() {
 
 //进行基金的Table画图
 function init_fund_table() {
-    url = "api/1.0/funds/hold";
     var hold_fund_info_ls = get_hold_fund();
     var tableColums = [
         { field: "fund_name", title: "基金名", sortable: true },
@@ -142,68 +141,7 @@ function init_search_table() {
         { field: "syl_3m", title: "3月收益率(%)", sortable: true },
         { field: "syl_6m", title: "6月收益率(%)", sortable: true },
         { field: "syl_1y", title: "1年收益率(%)", sortable: true },
-        { field: "rate", title: "费率(%)", sortable: true },
-        {
-            field: "operate",
-            title: "操作",
-            sortable: false,
-            events: {
-                'click #buyButton': function (e, value, row, index) {
-
-                    $("#BuyModal").modal({
-                        // remote: "test/test.jsp";//可以填写一个url，会调用jquery load方法加载数据
-                        backdrop: "static", //指定一个静态背景，当用户点击背景处，modal界面不会消失
-                        keyboard: true //当按下esc键时，modal框消失
-                    });
-
-                    $("#confirmBuyButton").unbind('click').click(function () {
-                        $('#BuyModal').modal('hide');
-                        var buy_money = parseFloat($("#buyMoney").val());
-                        var paras_set = { "fund_code": row.fund_code, "buy_flag": "1", "buy_money": buy_money };
-                        if (trace_to_server(paras_set)) {
-                            $("#TipsText").text("已申请买入");
-                            $('#showTipsModal').modal('show');
-                            // return false;
-                        }
-                        else {
-                            $("#TipsText").text("申请买入失败，请检查参数");
-                            $('#showTipsModal').modal('show');
-                            // alert("申请卖出失败，请检查参数");
-                            // return false;
-                        }
-                        return false; //防止重复执行
-                    });
-
-                    $("#BuyModal").on("loaded.bs.modal", function () {
-                        //在模态框加载的同时做一些动作
-                        return;
-
-                    });
-                    $("#BuyModal").on("show.bs.modal", function () {
-
-                        //在show方法后调用
-                        return;
-
-                    });
-                    $("#BuyModal").on("shown.bs.modal", function () {
-
-                        //在模态框完全展示出来做一些动作
-                        $("#BuyFundName").val(row.fund_name);
-                        $("#BuyFundCode").val(row.fund_code);
-                        $("#buyMoney").val(5000);
-                    });
-                    $("#BuyModal").on("hide.bs.modal", function () {
-                        //hide方法后调用
-                    });
-                }
-            },
-            formatter: function (value, row, index) {
-                var result = "";
-                result += '<button id="buyButton" class="btn btn-info" data-toggle="modal" data-target="#editModal">购买</button>';
-                // result += '<button id="delete" class="btn btn-danger" style="margin-left:10px;">取消关注</button>';
-                return result;
-            }
-        }
+        { field: "rate", title: "费率(%)", sortable: true }
     ];
 
     $('#search-table').bootstrapTable(

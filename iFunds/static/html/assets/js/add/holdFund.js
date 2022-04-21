@@ -18,7 +18,6 @@ function show_user_info() {
 
 //进行基金的Table画图
 function init_fund_table() {
-    url = "api/1.0/funds/hold";
     var hold_fund_info_ls = get_hold_fund();
     var tableColums = [
         { field: "fund_name", title: "基金名", sortable: true },
@@ -65,7 +64,7 @@ function init_fund_table() {
                             $('#fund-table').bootstrapTable("load", hold_fund_info_ls);
                             $("#TipsText").text("已申请卖出");
                             $('#showTipsModal').modal('show');
-                            // alert("成功申请卖出");
+                            init_record_table();
                         }
                         else {
                             $('#myModal').modal('hide');
@@ -149,7 +148,12 @@ function init_search_table() {
             sortable: false,
             events: {
                 'click #buyButton': function (e, value, row, index) {
-                    
+                    if (!check_login_or_not()){
+                        $("#TipsText").text("用户未登录，不可以进行购买");
+                        $('#showTipsModal').modal('show');
+                        return false;
+                    }
+
                     $("#BuyModal").modal({
                         // remote: "test/test.jsp";//可以填写一个url，会调用jquery load方法加载数据
                         backdrop: "static", //指定一个静态背景，当用户点击背景处，modal界面不会消失
@@ -164,13 +168,12 @@ function init_search_table() {
                             $("#TipsText").text("已申请买入");
                             $('#showTipsModal').modal('show');
                             init_record_table();
-                            // return false;
+                            return true;
                         }
                         else {
                             $("#TipsText").text("申请买入失败，请检查参数");
                             $('#showTipsModal').modal('show');
-                            // alert("申请卖出失败，请检查参数");
-                            // return false;
+                            return false;
                         }
                     });
 

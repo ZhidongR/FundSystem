@@ -17,6 +17,3 @@ api = Blueprint('api_1_0', __name__, url_prefix='/api/1.0')
 # 导入蓝图的视图
 from . import demoa, register, session, funds, profile, trace, news
 
-# def init_app(app):
-#     app.register_blueprint(user_bp)
-#     app.register_blueprint(posts_bp)

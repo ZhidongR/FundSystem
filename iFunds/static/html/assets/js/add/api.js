@@ -162,6 +162,7 @@ function logout() {
 function check_login_or_not() {
     //定义返回值
     var re_map = {};
+    var bool_flag=false;
     $.ajax({
         async: false,//false同步，页面会出现假死，直至ajax代码执行完;true异步
         url: 'api/1.0/sessions',
@@ -171,6 +172,7 @@ function check_login_or_not() {
         headers: { 'X-CSRFToken': getCookie('csrf_token') },
         success: function (res) {
             if (res.code == '0') {
+                bool_flag = true;
                 re_map= res.data
                 return re_map;
             } else {
@@ -183,7 +185,13 @@ function check_login_or_not() {
             return false;
         }
     });
-    return re_map;
+    if (bool_flag){
+        return re_map;
+    }
+    else{
+        return bool_flag
+    }
+
 }
 
 function get_user_info() {

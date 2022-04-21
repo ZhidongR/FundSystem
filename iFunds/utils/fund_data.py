@@ -424,7 +424,7 @@ if __name__ == "__main__":
     # print(fund_data.get_real_fund_data(fund_code="000001"))
     # fund_data.get_dapan_data()
     # fund_data.get_detail_data(fund_code="320007")
-    fund_data.get_detail_data(fund_code="005536")
+    fund_data.get_detail_data(fund_code="002625")
     # print(fund_data.get_detail_data(fund_code="000137"))
     # for _ in range(400):
     #     print(_)

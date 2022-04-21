@@ -71,7 +71,7 @@ def create_app(config_name, **kwargs):
                                     charset=config_class.REDIS_CAHRSET, encoding=config_class.REDIS_ENCODING)
 
     # 为flask补充csrf防护机制
-    # csrf.init_app(app)
+    csrf.init_app(app)
 
     # 利用flask的session,将redis的数据保存在session中
     Session(app)

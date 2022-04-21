@@ -33,11 +33,11 @@ def make_celery(app_name):
 my_celery = make_celery(__name__)
 
 # 创建Flask对象
-app = create_app("develop", celery=my_celery)
+app = create_app("product", celery=my_celery)
 app.app_context().push()
 
 # 让迁移时，app和db建立关联
 migrate = Migrate(app, db)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()

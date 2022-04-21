@@ -16,7 +16,7 @@ from iFunds.tasks import *
 class DatabaseTestCase(unittest.TestCase):
 
     def setUp(self):
-        app = create_app("develop")
+        app = create_app("product")
         Migrate(app, db)
         self.app = app
 
@@ -37,7 +37,12 @@ class DatabaseTestCase(unittest.TestCase):
             deal_sale_record()
             update_hold_fund_info()
             update_user_fund_info()
+            # use_task_update()
 
 
 if __name__ == "__main__":
     run_code = 0
+    case = DatabaseTestCase()
+    case.setUp()
+    case.test_task()
+    case.tearDown()
