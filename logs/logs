@@ -1,0 +1,273 @@
+INFO _internal.py:225  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:225  * Restarting with stat
+WARNING _internal.py:225  * Debugger is active!
+INFO _internal.py:225  * Debugger PIN: 143-576-719
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:33] "GET / HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:34] "GET /assets/css/bootstrap.min.css HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:34] "GET /assets/css/font-awesome.min.css HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:34] "GET /assets/css/metisMenu.css HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:34] "GET /assets/css/themify-icons.css HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:34] "GET /assets/css/owl.carousel.min.css HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:34] "GET /assets/js/vendor/bootstraptabledist/bootstrap-table.css HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:34] "GET /assets/css/slicknav.min.css HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:34] "GET /assets/js/vendor/bootstraptabledist/extensions/fixed-columns/bootstrap-table-fixed-columns.css HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:34] "GET /assets/css/typography.css HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:34] "GET /assets/css/export.css HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:34] "GET /assets/css/responsive.css HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:34] "GET /assets/css/styles.css HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:34] "GET /assets/css/default-css.css HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:34] "GET /assets/js/vendor/modernizr-2.8.3.min.js HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:34] "GET /assets/js/bootstrap.min.js HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:34] "GET /assets/js/popper.min.js HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:34] "GET /assets/js/vendor/jquery-2.2.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:34] "GET /assets/js/metisMenu.min.js HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:34] "GET /assets/js/owl.carousel.min.js HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:34] "GET /assets/js/jquery.slimscroll.min.js HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:34] "GET /assets/js/jquery.slicknav.min.js HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:34] "GET /assets/js/vendor/bootstraptabledist/bootstrap-table.js HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:34] "GET /assets/js/vendor/bootstraptabledist/locale/bootstrap-table-zh-CN.js HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:34] "GET /assets/js/Chart.min.js HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:34] "GET /assets/js/vendor/bootstraptabledist/extensions/fixed-columns/bootstrap-table-fixed-columns.js HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:34] "GET /assets/js/highcharts.js HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:34] "GET /assets/js/zingchart.min.js HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:34] "GET /assets/js/add/index.js HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:34] "GET /assets/js/vendor/amchartsV3_lib/amcharts/amcharts.js HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:34] "GET /assets/js/echarts.min.js HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:34] "GET /assets/js/vendor/amchartsV3_lib/amcharts/serial.js HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:34] "GET /assets/js/vendor/amchartsV3_lib/amcharts/themes/light.js HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:34] "GET /assets/js/add/line-chart-add-data.js HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:34] "GET /assets/js/pie-chart.js HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:34] "GET /assets/js/scripts.js HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:34] "GET /assets/js/plugins.js HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:34] "GET /assets/images/icon/logo1.png HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:34] "GET /assets/js/add/api.js HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:35] "GET /assets/images/author/author-img1.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:35] "GET /assets/images/author/author-img2.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:35] "GET /assets/images/author/author-img3.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:35] "GET /assets/images/author/avatar.png HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:35] "GET /assets/images/author/author-img4.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:35] "GET /assets/images/blog/post-thumb1.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:35] "GET /assets/images/blog/post-thumb2.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:36] "GET /assets/fonts/themify.woff?-fvbane HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:36] "GET /assets/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:36] "GET /api/1.0/user HTTP/1.1" 200 -
+DEBUG connectionpool.py:227 Starting new HTTP connection (1): push2.eastmoney.com:80
+DEBUG connectionpool.py:452 http://push2.eastmoney.com:80 "GET /api/qt/stock/trends2/get?secid=1.000001&fields1=f1,f2,f3,f4,f5,f6,f7,f8,f9,f10,f11,f12,f13&fields2=f51,f52,f53,f54,f55,f56,f57,f58&ut=e1e6871893c6386c5ff6967026016627&iscr=0&cb=cb_1636081485941_61628666&isqhquote=&cb_1636081485941_61628666=cb_1636081485941_61628666 HTTP/1.1" 200 4731
+DEBUG connectionpool.py:227 Starting new HTTP connection (1): push2.eastmoney.com:80
+DEBUG connectionpool.py:452 http://push2.eastmoney.com:80 "GET /api/qt/stock/trends2/get?secid=1.399001&fields1=f1,f2,f3,f4,f5,f6,f7,f8,f9,f10,f11,f12,f13&fields2=f51,f52,f53,f54,f55,f56,f57,f58&ut=e1e6871893c6386c5ff6967026016627&iscr=0&cb=cb_1636081485941_61628666&isqhquote=&cb_1636081485941_61628666=cb_1636081485941_61628666 HTTP/1.1" 200 89
+DEBUG connectionpool.py:227 Starting new HTTP connection (1): push2.eastmoney.com:80
+DEBUG connectionpool.py:452 http://push2.eastmoney.com:80 "GET /api/qt/stock/trends2/get?secid=1.000300&fields1=f1,f2,f3,f4,f5,f6,f7,f8,f9,f10,f11,f12,f13&fields2=f51,f52,f53,f54,f55,f56,f57,f58&ut=e1e6871893c6386c5ff6967026016627&iscr=0&cb=cb_1636081485941_61628666&isqhquote=&cb_1636081485941_61628666=cb_1636081485941_61628666 HTTP/1.1" 200 4585
+DEBUG connectionpool.py:227 Starting new HTTP connection (1): push2.eastmoney.com:80
+DEBUG connectionpool.py:452 http://push2.eastmoney.com:80 "GET /api/qt/stock/trends2/get?secid=1.399005&fields1=f1,f2,f3,f4,f5,f6,f7,f8,f9,f10,f11,f12,f13&fields2=f51,f52,f53,f54,f55,f56,f57,f58&ut=e1e6871893c6386c5ff6967026016627&iscr=0&cb=cb_1636081485941_61628666&isqhquote=&cb_1636081485941_61628666=cb_1636081485941_61628666 HTTP/1.1" 200 89
+DEBUG connectionpool.py:227 Starting new HTTP connection (1): push2.eastmoney.com:80
+DEBUG connectionpool.py:452 http://push2.eastmoney.com:80 "GET /api/qt/stock/trends2/get?secid=1.399006&fields1=f1,f2,f3,f4,f5,f6,f7,f8,f9,f10,f11,f12,f13&fields2=f51,f52,f53,f54,f55,f56,f57,f58&ut=e1e6871893c6386c5ff6967026016627&iscr=0&cb=cb_1636081485941_61628666&isqhquote=&cb_1636081485941_61628666=cb_1636081485941_61628666 HTTP/1.1" 200 89
+DEBUG connectionpool.py:227 Starting new HTTP connection (1): push2.eastmoney.com:80
+DEBUG connectionpool.py:452 http://push2.eastmoney.com:80 "GET /api/qt/stock/trends2/get?secid=1.000016&fields1=f1,f2,f3,f4,f5,f6,f7,f8,f9,f10,f11,f12,f13&fields2=f51,f52,f53,f54,f55,f56,f57,f58&ut=e1e6871893c6386c5ff6967026016627&iscr=0&cb=cb_1636081485941_61628666&isqhquote=&cb_1636081485941_61628666=cb_1636081485941_61628666 HTTP/1.1" 200 4555
+DEBUG connectionpool.py:227 Starting new HTTP connection (1): push2.eastmoney.com:80
+DEBUG connectionpool.py:452 http://push2.eastmoney.com:80 "GET /api/qt/stock/trends2/get?secid=1.399007&fields1=f1,f2,f3,f4,f5,f6,f7,f8,f9,f10,f11,f12,f13&fields2=f51,f52,f53,f54,f55,f56,f57,f58&ut=e1e6871893c6386c5ff6967026016627&iscr=0&cb=cb_1636081485941_61628666&isqhquote=&cb_1636081485941_61628666=cb_1636081485941_61628666 HTTP/1.1" 200 89
+DEBUG connectionpool.py:227 Starting new HTTP connection (1): push2.eastmoney.com:80
+DEBUG connectionpool.py:452 http://push2.eastmoney.com:80 "GET /api/qt/stock/trends2/get?secid=1.000688&fields1=f1,f2,f3,f4,f5,f6,f7,f8,f9,f10,f11,f12,f13&fields2=f51,f52,f53,f54,f55,f56,f57,f58&ut=e1e6871893c6386c5ff6967026016627&iscr=0&cb=cb_1636081485941_61628666&isqhquote=&cb_1636081485941_61628666=cb_1636081485941_61628666 HTTP/1.1" 200 4237
+DEBUG connectionpool.py:227 Starting new HTTP connection (1): push2.eastmoney.com:80
+DEBUG connectionpool.py:452 http://push2.eastmoney.com:80 "GET /api/qt/stock/trends2/get?secid=1.000003&fields1=f1,f2,f3,f4,f5,f6,f7,f8,f9,f10,f11,f12,f13&fields2=f51,f52,f53,f54,f55,f56,f57,f58&ut=e1e6871893c6386c5ff6967026016627&iscr=0&cb=cb_1636081485941_61628666&isqhquote=&cb_1636081485941_61628666=cb_1636081485941_61628666 HTTP/1.1" 200 3506
+DEBUG connectionpool.py:227 Starting new HTTP connection (1): push2.eastmoney.com:80
+DEBUG connectionpool.py:452 http://push2.eastmoney.com:80 "GET /api/qt/stock/trends2/get?secid=1.399293&fields1=f1,f2,f3,f4,f5,f6,f7,f8,f9,f10,f11,f12,f13&fields2=f51,f52,f53,f54,f55,f56,f57,f58&ut=e1e6871893c6386c5ff6967026016627&iscr=0&cb=cb_1636081485941_61628666&isqhquote=&cb_1636081485941_61628666=cb_1636081485941_61628666 HTTP/1.1" 200 89
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:39] "GET /api/1.0/funds/generate HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:40] "POST /api/1.0/funds HTTP/1.1" 200 -
+DEBUG connectionpool.py:971 Starting new HTTPS connection (1): money.163.com:443
+DEBUG connectionpool.py:452 https://money.163.com:443 "GET /special/00259BVP/news_flow_index.js?callback=data_callback HTTP/1.1" 200 8216
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:41] "GET /api/1.0/news HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:42] "GET /assets/js/vendor/amchartsV3_lib/amcharts/images/dragIconRoundBig.svg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:42] "GET /assets/js/vendor/amchartsV3_lib/amcharts/images/lens.svg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:52] "GET /favouriteFund.html HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:52] "[36mGET /assets/js/vendor/modernizr-2.8.3.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:52] "[36mGET /assets/js/vendor/jquery-2.2.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:52] "[36mGET /assets/js/popper.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:52] "[36mGET /assets/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:52] "[36mGET /assets/js/owl.carousel.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:52] "[36mGET /assets/js/metisMenu.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:52] "[36mGET /assets/js/jquery.slimscroll.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:52] "[36mGET /assets/js/jquery.slicknav.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:52] "[36mGET /assets/js/vendor/bootstraptabledist/bootstrap-table.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:52] "[36mGET /assets/js/vendor/bootstraptabledist/locale/bootstrap-table-zh-CN.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:52] "[36mGET /assets/js/vendor/bootstraptabledist/extensions/fixed-columns/bootstrap-table-fixed-columns.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:52] "[36mGET /assets/js/zingchart.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:52] "[36mGET /assets/js/echarts.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:52] "[36mGET /assets/js/Chart.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:52] "[36mGET /assets/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:52] "[36mGET /assets/js/highcharts.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:52] "[36mGET /assets/css/font-awesome.min.css HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:52] "[36mGET /assets/js/vendor/amchartsV3_lib/amcharts/amcharts.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:52] "[36mGET /assets/css/themify-icons.css HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:52] "[36mGET /assets/css/metisMenu.css HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:52] "[36mGET /assets/js/vendor/amchartsV3_lib/amcharts/serial.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:53] "[36mGET /assets/js/vendor/amchartsV3_lib/amcharts/themes/light.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:53] "[36mGET /assets/js/add/line-chart-add-data.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:53] "[36mGET /assets/js/pie-chart.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:53] "[36mGET /assets/js/scripts.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:53] "[36mGET /assets/js/add/api.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:53] "[36mGET /assets/css/owl.carousel.min.css HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:53] "[36mGET /assets/css/slicknav.min.css HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:53] "[36mGET /assets/js/plugins.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:53] "[36mGET /assets/js/vendor/bootstraptabledist/bootstrap-table.css HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:53] "[36mGET /assets/js/vendor/bootstraptabledist/extensions/fixed-columns/bootstrap-table-fixed-columns.css HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:53] "[36mGET /assets/css/export.css HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:53] "[36mGET /assets/css/default-css.css HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:53] "[36mGET /assets/css/styles.css HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:53] "[36mGET /assets/css/typography.css HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:53] "[36mGET /assets/css/responsive.css HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:53] "GET /assets/js/add/favouriteFund.js HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:53] "[36mGET /assets/images/icon/logo1.png HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:53] "[36mGET /assets/images/author/author-img1.jpg HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:53] "[36mGET /assets/images/author/author-img2.jpg HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:53] "[36mGET /assets/images/author/author-img3.jpg HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:53] "[36mGET /assets/images/author/avatar.png HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:53] "[36mGET /assets/images/author/author-img4.jpg HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:54] "GET /api/1.0/user HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:56] "GET /api/1.0/funds/favourite HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:46:59] "POST /api/1.0/funds HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:02] "DELETE /api/1.0/funds/favourite HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:03] "DELETE /api/1.0/funds/favourite HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:04] "GET /news.html HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:04] "[36mGET /assets/css/owl.carousel.min.css HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:04] "[36mGET /assets/js/vendor/bootstraptabledist/bootstrap-table.css HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:04] "[36mGET /assets/css/slicknav.min.css HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:04] "[36mGET /assets/js/vendor/bootstraptabledist/extensions/fixed-columns/bootstrap-table-fixed-columns.css HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:04] "[36mGET /assets/css/export.css HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:04] "[36mGET /assets/css/typography.css HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:04] "[36mGET /assets/css/default-css.css HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:04] "[36mGET /assets/css/styles.css HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:05] "[36mGET /assets/css/responsive.css HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:05] "[36mGET /assets/js/vendor/modernizr-2.8.3.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:05] "[36mGET /assets/js/popper.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:05] "[36mGET /assets/js/vendor/jquery-2.2.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:05] "[36mGET /assets/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:05] "[36mGET /assets/js/metisMenu.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:05] "[36mGET /assets/js/jquery.slimscroll.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:05] "[36mGET /assets/js/owl.carousel.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:05] "[36mGET /assets/js/jquery.slicknav.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:05] "[36mGET /assets/js/vendor/bootstraptabledist/bootstrap-table.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:05] "[36mGET /assets/js/Chart.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:05] "[36mGET /assets/js/vendor/bootstraptabledist/extensions/fixed-columns/bootstrap-table-fixed-columns.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:05] "[36mGET /assets/js/vendor/bootstraptabledist/locale/bootstrap-table-zh-CN.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:05] "[36mGET /assets/js/echarts.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:05] "[36mGET /assets/js/zingchart.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:05] "[36mGET /assets/js/highcharts.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:05] "[36mGET /assets/js/vendor/amchartsV3_lib/amcharts/amcharts.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:05] "[36mGET /assets/js/vendor/amchartsV3_lib/amcharts/serial.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:05] "[36mGET /assets/js/vendor/amchartsV3_lib/amcharts/themes/light.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:05] "[36mGET /assets/js/add/line-chart-add-data.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:05] "[36mGET /assets/js/pie-chart.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:05] "[36mGET /assets/js/plugins.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:05] "[36mGET /assets/js/scripts.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:05] "[36mGET /assets/js/add/api.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:05] "GET /assets/css/bootstrap.min.css HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:05] "[36mGET /assets/css/font-awesome.min.css HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:05] "[36mGET /assets/css/themify-icons.css HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:05] "[36mGET /assets/css/metisMenu.css HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:05] "GET /assets/js/add/news.js HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:05] "[36mGET /assets/images/blog/post-thumb1.jpg HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:05] "[36mGET /assets/images/blog/post-thumb2.jpg HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:05] "[36mGET /assets/images/icon/logo1.png HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:05] "[36mGET /assets/images/author/author-img1.jpg HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:05] "[36mGET /assets/images/author/author-img2.jpg HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:05] "[36mGET /assets/images/author/author-img3.jpg HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:05] "[36mGET /assets/images/author/author-img4.jpg HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:05] "[36mGET /assets/images/author/avatar.png HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:06] "GET /api/1.0/user HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:06] "GET /api/1.0/news HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:09] "GET /fundDetail.html HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:10] "[36mGET /assets/js/vendor/modernizr-2.8.3.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:10] "[36mGET /assets/js/vendor/jquery-2.2.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:10] "[36mGET /assets/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:10] "[36mGET /assets/js/popper.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:10] "[36mGET /assets/js/owl.carousel.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:10] "[36mGET /assets/js/jquery.slimscroll.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:10] "[36mGET /assets/js/metisMenu.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:10] "[36mGET /assets/js/jquery.slicknav.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:10] "[36mGET /assets/js/vendor/bootstraptabledist/bootstrap-table.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:10] "[36mGET /assets/js/vendor/bootstraptabledist/locale/bootstrap-table-zh-CN.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:10] "[36mGET /assets/js/Chart.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:10] "[36mGET /assets/js/highcharts.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:10] "[36mGET /assets/js/vendor/bootstraptabledist/extensions/fixed-columns/bootstrap-table-fixed-columns.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:10] "[36mGET /assets/js/zingchart.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:10] "[36mGET /assets/js/echarts.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:10] "[36mGET /assets/js/vendor/amchartsV3_lib/amcharts/amcharts.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:10] "[36mGET /assets/js/vendor/amchartsV3_lib/amcharts/serial.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:10] "[36mGET /assets/js/vendor/amchartsV3_lib/amcharts/themes/light.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:10] "[36mGET /assets/js/plugins.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:10] "[36mGET /assets/js/pie-chart.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:10] "[36mGET /assets/js/add/line-chart-add-data.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:10] "[36mGET /assets/js/add/api.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:10] "[36mGET /assets/js/scripts.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:10] "[36mGET /assets/css/font-awesome.min.css HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:10] "[36mGET /assets/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:10] "[36mGET /assets/css/themify-icons.css HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:10] "[36mGET /assets/css/metisMenu.css HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:10] "[36mGET /assets/css/owl.carousel.min.css HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:10] "[36mGET /assets/css/slicknav.min.css HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:10] "[36mGET /assets/js/vendor/bootstraptabledist/bootstrap-table.css HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:10] "[36mGET /assets/js/vendor/bootstraptabledist/extensions/fixed-columns/bootstrap-table-fixed-columns.css HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:10] "[36mGET /assets/css/export.css HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:10] "[36mGET /assets/css/typography.css HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:10] "[36mGET /assets/css/styles.css HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:10] "[36mGET /assets/css/default-css.css HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:10] "[36mGET /assets/css/responsive.css HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:10] "GET /assets/js/add/fundDetail.js HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:11] "GET /assets/images/icon/logo1.png HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:11] "GET /assets/images/author/author-img1.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:11] "[36mGET /assets/images/author/author-img2.jpg HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:11] "[36mGET /assets/images/author/author-img3.jpg HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:11] "[36mGET /assets/images/author/author-img4.jpg HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:11] "[36mGET /assets/images/author/avatar.png HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:11] "GET /api/1.0/user HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:11] "GET /api/1.0/funds/hold HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:13] "GET /holdFund.html HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:14] "[36mGET /assets/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:14] "[36mGET /assets/css/font-awesome.min.css HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:14] "[36mGET /assets/css/themify-icons.css HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:14] "[36mGET /assets/css/metisMenu.css HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:14] "[36mGET /assets/css/slicknav.min.css HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:14] "[36mGET /assets/css/owl.carousel.min.css HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:14] "[36mGET /assets/js/vendor/bootstraptabledist/extensions/fixed-columns/bootstrap-table-fixed-columns.css HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:14] "[36mGET /assets/js/vendor/bootstraptabledist/bootstrap-table.css HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:14] "[36mGET /assets/css/export.css HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:14] "[36mGET /assets/css/typography.css HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:14] "[36mGET /assets/css/default-css.css HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:14] "[36mGET /assets/css/responsive.css HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:14] "[36mGET /assets/css/styles.css HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:14] "[36mGET /assets/js/vendor/modernizr-2.8.3.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:14] "[36mGET /assets/js/owl.carousel.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:14] "[36mGET /assets/js/vendor/jquery-2.2.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:14] "[36mGET /assets/js/popper.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:14] "[36mGET /assets/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:14] "[36mGET /assets/js/metisMenu.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:14] "[36mGET /assets/js/jquery.slimscroll.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:14] "[36mGET /assets/js/jquery.slicknav.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:14] "[36mGET /assets/js/vendor/bootstraptabledist/bootstrap-table.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:14] "[36mGET /assets/js/vendor/bootstraptabledist/locale/bootstrap-table-zh-CN.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:14] "[36mGET /assets/js/vendor/bootstraptabledist/extensions/fixed-columns/bootstrap-table-fixed-columns.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:14] "[36mGET /assets/js/Chart.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:14] "[36mGET /assets/js/zingchart.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:14] "[36mGET /assets/js/highcharts.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:14] "[36mGET /assets/js/echarts.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:14] "[36mGET /assets/js/vendor/amchartsV3_lib/amcharts/serial.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:14] "[36mGET /assets/js/vendor/amchartsV3_lib/amcharts/amcharts.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:14] "[36mGET /assets/js/add/line-chart-add-data.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:14] "[36mGET /assets/js/vendor/amchartsV3_lib/amcharts/themes/light.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:14] "[36mGET /assets/js/pie-chart.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:14] "[36mGET /assets/js/plugins.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:14] "[36mGET /assets/js/add/api.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:14] "[36mGET /assets/js/scripts.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:15] "GET /assets/js/add/holdFund.js HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:15] "[36mGET /assets/images/icon/logo1.png HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:15] "[36mGET /assets/images/author/author-img1.jpg HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:15] "[36mGET /assets/images/author/author-img2.jpg HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:15] "[36mGET /assets/images/author/author-img3.jpg HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:15] "[36mGET /assets/images/author/author-img4.jpg HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:15] "[36mGET /assets/images/author/avatar.png HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:16] "GET /api/1.0/user HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:16] "GET /api/1.0/funds/hold HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:16] "GET /api/1.0/trace HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:25] "POST /api/1.0/trace HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:26] "GET /api/1.0/funds/hold HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [21/Apr/2022 13:47:26] "GET /api/1.0/trace HTTP/1.1" 200 -
